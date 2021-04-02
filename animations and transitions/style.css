@@ -1,0 +1,23 @@
+.move-transform{
+    height: 160px;
+    background: #24252A;
+    padding: 20px;
+}
+.move-transform .container{
+    height: 120px;
+    padding: 20px;
+    border: 1px solid #bdbdbd;
+}
+.move-transform .container .element{
+    height: 120px;
+    width: 120px;
+    background: #81d4fa;
+    /*property let change varius properties css o can use value all*/
+    transition-property: border-radius, transform;
+    /*duration is the time for transition*/
+    transition-duration: 1s;
+}
+.move-transform .container:hover .element{
+    border-radius: 50%;
+    transform: translate(70vw); /*move the element*/
+}
