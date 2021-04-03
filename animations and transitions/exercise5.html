@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Exercise</h1>
+        Define a transition on the .box for the "left" property. 
+        Add JavaScript code to the clicked function to toggle the position of the box between left=0 and left=300, i.e., make the box move left to right and right to left when clicked.
+        (Can you make it move in a square path? Left->Right->Bottom->Right->Top)
+        <div class="box">Lorem</div>
+    </div>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #117fff;
+            position: absolute;
+            left: 0px;
+            top:0px;
+            transition: left 1s ease-out,top 1s ease-out 1s,right 1s ease-out 2s;
+        }
+        #main:hover .box{
+            left: 300px;
+            top:300px;
+        }
+    </style>
+</body>
+</html>
