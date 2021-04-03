@@ -1,0 +1,70 @@
+@font-face{
+    font-family: "Luna";
+    src: url(../font/Luna.ttf);
+}
+
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #1a2027;
+    overflow-x: hidden;
+}
+header{
+    font-family: "Luna";
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+header h1{
+    margin-top: -100px;
+}
+header, header:before{
+    /* background: 50% 50% cover; */
+    z-index: -1;
+}
+header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url("../img/background-parallax.jpg");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -2;
+    min-height: 100vh;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+header *{
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+section{
+    /* z-index: 2; */
+    line-height: 30px;
+    font-weight: lighter;
+    padding:  40px 10%;
+    color: #fafafa;
+    background: inherit;
+}

@@ -57,12 +57,12 @@ Aplicar transições CSS para animar a abertura das cartas.
 }
 
 .card:hover {
-  outline: 3px solid red;
-  transition: all 1s;
+  outline: 3px solid #2a2a2a;
+  transition: outline .3;
 }
 
 .deck:hover .card{
-  transition: all 1s;
+  transition: transform 1s;
 }
 .deck:hover .card:nth-child(1) {
   transform:rotate(-20deg);
