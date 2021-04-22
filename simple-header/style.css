@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+.header{
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Barlow', sans-serif;
+}
+.header_container{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 5%;
+    
+}
+.header_left,
+.header_right{
+    display: inline-flex;
+}
+.header_left{
+    width: 250px;
+}
+.header_logo{
+    width: 120px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.header_right{
+    /* background-color: #fafafa; */
+}
+.header_nav{
+}
+.header_nav_menu{
+    display: block;
+    list-style-type: none;
+}
+.header_nav_menu_item{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.header_nav_menu_item_link,
+.header_nav_menu_item_button{
+    text-decoration: none;
+    color: #606060;
+    padding: 8px 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: none;
+    transition: color .5s;
+    border: 0;
+    position: relative;
+}
+.header_nav_menu_item_link:hover,
+.header_nav_menu_item_link:active,
+.header_nav_menu_item_link:focus
+{
+    color: black;
+}
+.header_nav_menu_item_link:before,
+.header_nav_menu_item_link:before,
+.header_nav_menu_item_link:before
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #2979FF;
+    transition: 0.3s;
+}
+.header_nav_menu_item_link:hover:before,
+.header_nav_menu_item_link:active:before,
+.header_nav_menu_item_link:focus:before
+{
+    /* transform: scale(0); */
+    width: 100%;
+}
+.header_nav_menu_item_button{
+    background-color: #2979FF;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s;
+}
+.header_nav_menu_item_button:hover,
+.header_nav_menu_item_button:active,
+.header_nav_menu_item_button:focus
+{
+    background-color: #21459B;
+}
