@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #606060;
+}
+.dymanic-step-form{
+    width: 700px;
+    height: 450px;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* box-shadow: 0 0 40px rgba(0, 0, 0, .2); */
+    display: block;
+    border: 0;
+    position: relative;
+}
+.dymanic-step-form .init-title
+{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    justify-content: center;
+    border: 0;
+    overflow: hidden;
+}
+.dymanic-step-form .init-title .start-step{
+    background: #21459B;
+    color: #fff;
+    padding: 16px 70px;
+    cursor: pointer;
+    border: 1px solid #142e6b;
+    margin-top: 40px;
+    border-radius: 4px;
+    font-size: 24px;
+    transition: .5s;
+}
+.dymanic-step-form .init-title .start-step:hover{
+    background: #142e6b;
+}
+.dymanic-step-form .init-title .welcome-title{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+}
+
+.dymanic-step-form .btn-actions{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    z-index: 3;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transition:0.5s
+}
+.dymanic-step-form .btn-actions span{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background: #21459B;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 4px;
+    transition: .5s;
+    cursor: pointer;
+}
+.dymanic-step-form .btn-actions span:active,
+.dymanic-step-form .btn-actions span:hover{
+    background: #142e6b;
+}
+.dymanic-step-form .btn-actions span.disabled{
+    color: #ccc;
+    background: #2a2a2a;
+}
+.dymanic-step-form .btn-actions span i{
+    transition: .3s;
+}
+.dymanic-step-form .btn-actions span:hover i{
+    transform: scale(1.1);
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+}
+.dymanic-step-form .btn-actions span:active i{
+    transform: scale(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+}
+/*steps*/
+.dymanic-step-form .step-container{
+    width: 100%;
+    display: none;
+}
+
+.dymanic-step-form .step{
+    width: 100%;
+    padding: 0  40px;
+    transition: .5s;
+    justify-content: start;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+.dymanic-step-form .step .title-step{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: block;
+}
+.dymanic-step-form .step .form-group{
+    width: 85%;
+    margin: auto;
+}
+.dymanic-step-form .step .form-group label{
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    align-items: center;
+    background: rgb(33, 69, 155,0.1);
+    border-radius: 4px;
+}
+.dymanic-step-form .step .form-group label *{
+    display: inline-block;
+    transition: .2s;
+}
+.dymanic-step-form .step .form-group label .check{
+    width: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.dymanic-step-form .step .form-group label input:checked ~ span
+{
+    font-weight: 700;
+    color: darkblue;
+}
+.dymanic-step-form .step .form-group label input:checked ~ span.check
+{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+}
+
+.dymanic-step-form .step .form-group label input{
+    display: none;
+}
+
+.dymanic-step-form .step .input-text-step,
+.dymanic-step-form .step .text-area-step{
+    width: 80%;
+    margin-top: 40px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+    box-shadow: 0 2px 0 #21459B;
+    color: #21459B;
+}
+.dymanic-step-form .step .text-area-step{
+    resize:vertical;
+    min-height: 200px;
+    color: #606060;
+}
+
+.dymanic-step-form.step-active .init-title{
+    height: 0;
+}
+.dymanic-step-form.step-active .btn-actions{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+}
+.dymanic-step-form.step-active .step-container{
+    display: block;
+}
+
+.dymanic-step-form.step-active .step.active{
+    height: 450px;
+    transform: scaleY(1);
+    padding: 30px;
+}

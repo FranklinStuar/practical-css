@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dymanic-step-form" class="dymanic-step-form">
+        <div class="init-title">
+            <span class="welcome-title">
+                Let's build the future of your company together.
+            </span>
+            <span class="welcome-title">
+                Tell us what us more about what you need
+            </span>
+            <span id="start-step" class="start-step">Start</span>
+        </div>
+        <div class="btn-actions">
+            <span class="prev-step disabled"><i class="fas fa-chevron-up"></i></span>
+            <span class="next-step"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="step-container">
+            <div id="step-1" class="step">
+                <span class="title-step">What type of team do you want to hire?</span>
+                <div class="form-group">
+                    <label class="form-group" for="step-1-a">
+                        <input type="radio" name="type-team" id="step-1-a">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">Build a Mobile App, web development or SAAS</span>
+                    </label>
+                    <label class="form-group" for="step-2-a">
+                        <input type="radio" name="type-team" id="step-2-a">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">Hire individual developers</span>
+                    </label>
+                    <label class="form-group" for="step-3-a">
+                        <input type="radio" name="type-team" id="step-3-a">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">UX/ Design</span>
+                    </label>
+                    <label class="form-group" for="step-4-a">
+                        <input type="radio" name="type-team" id="step-4-a">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">GMT Customer Service/Sales Development & Customer Success</span>
+                    </label>
+                    <label class="form-group" for="step-5-a">
+                        <input type="radio" name="type-team" id="step-5-a">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">E-Commerce</span>
+                    </label>
+                </div>
+            </div>
+            <div id="step-2" class="step">
+                <span class="title-step">When do you want to start?</span>
+                <div class="form-group">
+                    <label class="form-group" for="step-1-b">
+                        <input type="radio" name="time-start" id="step-1-b">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">ASAP - Right Now</span>
+                    </label>
+                    <label class="form-group" for="step-2-b">
+                        <input type="radio" name="time-start" id="step-2-b">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">1-2 Weeks</span>
+                    </label>
+                    <label class="form-group" for="step-3-b">
+                        <input type="radio" name="time-start" id="step-3-b">
+                        <span class="check"><i class="fas fa-arrow-right"></i></span> 
+                        <span class="context">1-2 Months</span>
+                    </label>
+                </div>
+            </div>
+            <div id="step-3" class="step">
+                <span class="title-step">What's your company name?</span>
+                <input type="text" name="company-name" class="input-text-step" placeholder="Type your answer here">
+            </div>
+            <div id="step-4" class="step">
+                <span class="title-step">What's your Job Title?</span>
+                <input type="text" name="job-title" class="input-text-step" placeholder="Type your answer here">
+            </div>
+            <div id="step-5" class="step">
+                <span class="title-step">What's your Full Name?</span>
+                <input type="text" name="full-name" class="input-text-step" placeholder="Type your answer here">
+            </div>
+            <div id="step-6" class="step">
+                <span class="title-step">What's your Contact email?</span>
+                <input type="email" name="email" class="input-text-step" placeholder="Type your answer here">
+            </div>
+            <div id="step-7" class="step">
+                <span class="title-step">What's your Cell Phone or  your WhatsApp contact?</span>
+                <input type="text" name="phone" class="input-text-step" placeholder="Type your answer here">
+            </div>
+            <div id="step-8" class="step">
+                <span class="title-step">Description about the project</span>
+                <textarea name="description-project" class="text-area-step" placeholder="Type your answer here"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
